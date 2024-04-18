@@ -141,7 +141,7 @@ const Home = () => {
                     />
                   </svg>
                 </span>
-                Welcome
+                Login
               </button>
             </div>
             <div>
