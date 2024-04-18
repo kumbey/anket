@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import router from "next/router";
 
 const AdminLogin = () => {
   const router = useRouter();
