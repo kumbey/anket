@@ -34,12 +34,15 @@ function Header() {
           </span>
         </Link>
         {user ? (
-          <button
-            onClick={handleSignOut}
-            className="text-white hover:text-gray-200"
-          >
-            Logout
-          </button>
+          <div className="flex flex-col items-end">
+            <div className="text-sm text-gray-500">{user.email}</div>
+            <button
+              onClick={handleSignOut}
+              className="text-white hover:text-gray-200"
+            >
+              Logout
+            </button>
+          </div>
         ) : (
           <Link href="/login">
             <span className="text-white hover:text-gray-200 cursor-pointer">
