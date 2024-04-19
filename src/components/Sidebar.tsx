@@ -27,6 +27,14 @@ const Sidebar: React.FC<SidebarProps> = ({ selectedMenu, onSelectMenu }) => {
           >
             Applications
           </li>
+          <li
+            className={`hover:bg-gray-700 rounded px-3 py-2 cursor-pointer ${
+              selectedMenu === "jobs" ? "bg-gray-700" : ""
+            }`}
+            onClick={() => onSelectMenu("jobs")}
+          >
+            Jobs
+          </li>
         </ul>
       </div>
     </div>
