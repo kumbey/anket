@@ -111,8 +111,9 @@ const AdminDashboard: React.FC = () => {
                 <div key={index}>
                   {user.email !== "admin@admin.com" && (
                     <li key={user.id} className="border-b border-gray-200 py-2">
-                      <div className="flex justify-between items-center">
-                        <div>
+                      <div className="flex">
+                        <p>{index + 1}</p>
+                        <div className=" pl-5">
                           <h2 className="text-lg font-semibold">{user.name}</h2>
                           <p className="text-gray-600">{user.email}</p>
                         </div>
@@ -128,8 +129,9 @@ const AdminDashboard: React.FC = () => {
                 <div key={index}>
                   {user.email !== "admin@admin.com" && (
                     <li key={user.id} className="border-b border-gray-200 py-2">
-                      <div className="flex justify-between items-center">
-                        <div>
+                      <div className="flex">
+                        <p>{index + 1}</p>
+                        <div className=" pl-5">
                           <h2 className="text-lg font-semibold">
                             Name: {user.name}
                           </h2>
